@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+    <!--{{les_labels_des_iris}}
+    <ul>
+    {% for iris_classes in les_labels_des_iris %}
+        <li>{{ iris_classes }}</li>
+    {% endfor %}
+    </ul>-->
+    
+    <label for="model-select">Choose a model:</label>
+    <form action="apply_Model">
+    <label for="model-select">Choose a model:</label>
+
+    <select name="model" id="model-select" onchange='if(this.value!=0) {this.form.submit();}'>
+        <option value="0">--Please choose an model--</option>
+        <option value="visu1">visu1</option>
+        <option value="visu2">visu2</option>
+        <option value="visu3">visu3</option>
+        <option value="visu4">visu4</option>
+        <option value="visu5">visu5</option>
+        <option value="visu6">visu6</option>
+        <option value="visu7">visu7</option>
+        <option value="visu8">visu8</option>
+        <option value="visu9">visu9</option>
+        <option value="visu10">visu10</option>
+        <option value="visu11">visu11</option>
+        <option value="visu12">visu12</option>
+        <option value="visu13">visu13</option>
+        <option value="visu14">visu14</option>
+        <option value="visu15">visu15</option>
+        <option value="visu16">visu16</option>
+        <option value="visu17">visu17</option>
+        <option value="visu18">visu18</option>
+        <option value="visu19">visu19</option>
+        <option value="visu20">visu20</option>
+        <option value="visu21">visu21</option>
+        <option value="visu22">visu22</option>
+        <option value="visu23">visu23</option>
+        <option value="visu24">visu24</option>
+        <option value="visu25">visu25</option>
+        <option value="visu26">visu26</option>
+        <option value="visu27">visu27</option>
+        <option value="visu28">visu28</option>
+        <option value="visu29">visu29</option>
+    </select>
+    </form>
+        {{plot_html|safe}}
+        
+
+   </body>
+</html>
